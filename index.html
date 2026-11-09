@@ -1,0 +1,2447 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creative Vision · foto i video za venčanja, Kragujevac</title>
+<meta name="description" content="Fotografisanje i snimanje venčanja iz Kragujevca, u celoj Srbiji i regionu. 10+ godina, 200+ venčanja i projekata, ocena 4,8 na Google-u. Pogledajte filmove.">
+<link rel="canonical" href="https://sites.entro-websites.com/creativevision/">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --accent:#115590;
+    --accent-dark:#0b3d69;
+    --accent-darker:#082c4d;
+    --accent-deep:#061f37;
+    --accent-soft:#e9f0f6;
+    --accent-soft-2:#d7e5f0;
+    --accent-line:rgba(17,85,144,0.24);
+    --accent-glow:rgba(17,85,144,0.22);
+
+    --text:#122232;
+    --text-muted:rgba(18,34,50,0.7);
+    --text-faint:rgba(18,34,50,0.7);
+    --line:rgba(18,34,50,0.1);
+
+    --bg:#ffffff;
+    --bg-off:#faf8f5;
+    --bg-ivory:#f4f0ea;
+
+    --radius-btn:999px;
+    --radius-card:20px;
+    --radius-sm:12px;
+    --radius-arch:999px 999px 20px 20px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;scroll-padding-top:88px;}
+  body{
+    margin:0;
+    font-family:'Cabin', sans-serif;
+    color:var(--text);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img{max-width:100%;height:auto;display:block;}
+  a{color:inherit;text-decoration:none;}
+  ul{margin:0;padding:0;list-style:none;}
+  button{font-family:inherit;}
+
+  h1,h2,h3{
+    font-family:'Gloock', serif;
+    font-weight:400;
+    color:var(--text);
+    margin:0;
+    line-height:1.12;
+    text-wrap:balance;
+  }
+  h2{font-size:clamp(32px, 4.4vw, 52px);}
+  h2 em, h1 em{
+    font-style:normal;
+    color:var(--accent);
+  }
+
+  p{
+    color:var(--text-muted);
+    line-height:1.7;
+    font-size:16px;
+    max-width:64ch;
+    margin:0 0 16px;
+    text-wrap:pretty;
+  }
+  .section-head p, .moments-head p, .intro-sub, .intro-text, .final-cta p, .moment p{text-wrap:balance;}
+
+  .wrap{
+    max-width:1280px;
+    margin:0 auto;
+    padding-left:24px;
+    padding-right:24px;
+  }
+  @media (max-width:768px){
+    .wrap{padding-left:20px;padding-right:20px;}
+  }
+
+  /* Ornament iznad eyebrow-a */
+  .eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:12px;
+    font-size:12px;
+    letter-spacing:0.2em;
+    text-transform:uppercase;
+    color:var(--accent);
+    font-weight:700;
+    margin-bottom:20px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:32px;
+    height:1px;
+    background:currentColor;
+    opacity:0.6;
+  }
+  .center .eyebrow::after{
+    content:"";
+    width:32px;
+    height:1px;
+    background:currentColor;
+    opacity:0.6;
+  }
+  .ornament{
+    display:block;
+    width:120px;
+    height:16px;
+    margin:24px 0 0;
+    color:var(--accent);
+  }
+  .center .ornament{margin-left:auto;margin-right:auto;}
+
+  /* Dugmad */
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    padding:16px 32px;
+    border-radius:var(--radius-btn);
+    font-family:'Cabin', sans-serif;
+    font-weight:600;
+    font-size:16px;
+    border:1px solid transparent;
+    cursor:pointer;
+    transition:transform .25s ease, box-shadow .25s ease, background .25s ease, color .25s ease, border-color .25s ease;
+    white-space:nowrap;
+  }
+  .btn svg{width:20px;height:20px;flex-shrink:0;}
+  .btn-primary{
+    background:var(--accent);
+    color:#fff;
+    box-shadow:0 16px 32px -12px var(--accent-glow);
+  }
+  .btn-primary:hover{
+    background:var(--accent-dark);
+    transform:translateY(-2px);
+    box-shadow:0 20px 36px -12px var(--accent-glow);
+  }
+  .btn-outline{
+    background:transparent;
+    color:var(--accent);
+    border-color:var(--accent-line);
+  }
+  .btn-outline:hover{
+    background:var(--accent-soft);
+    transform:translateY(-2px);
+  }
+  .btn-light{
+    background:#fff;
+    color:var(--accent);
+  }
+  .btn-light:hover{
+    background:var(--accent-soft);
+    transform:translateY(-2px);
+  }
+  .text-link{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-weight:600;
+    color:var(--accent);
+    border-bottom:1px solid var(--accent-line);
+    padding-bottom:4px;
+    transition:border-color .2s ease, gap .2s ease;
+  }
+  .text-link:hover{border-color:var(--accent);gap:12px;}
+  .text-link svg{width:16px;height:16px;}
+
+  /* Header */
+  header{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:rgba(250,248,245,0.96);
+    border-bottom:1px solid transparent;
+    transition:box-shadow .3s ease, background .3s ease, border-color .3s ease;
+  }
+  header.scrolled{
+    background:rgba(255,255,255,0.84);
+    backdrop-filter:blur(16px);
+    -webkit-backdrop-filter:blur(16px);
+    border-color:var(--line);
+    box-shadow:0 8px 24px -20px rgba(18,34,50,0.4);
+  }
+  .nav-inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding-top:16px;
+    padding-bottom:16px;
+  }
+  .logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-family:'Gloock', serif;
+    font-size:20px;
+    color:var(--text);
+  }
+  .logo img{width:40px;height:40px;object-fit:contain;}
+  .nav-links{
+    display:flex;
+    align-items:center;
+    gap:32px;
+  }
+  .nav-links a:not(.btn){
+    font-size:16px;
+    font-weight:500;
+    color:var(--text-muted);
+    transition:color .2s ease;
+  }
+  .nav-links a:not(.btn):hover{color:var(--accent);}
+  .nav-cta{margin-left:8px;padding:12px 24px;}
+
+  .hamburger{
+    display:none;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:44px;
+    height:44px;
+    border:1px solid var(--line);
+    border-radius:var(--radius-sm);
+    background:transparent;
+    cursor:pointer;
+    gap:4px;
+  }
+  .hamburger span{
+    display:block;
+    width:20px;
+    height:2px;
+    background:var(--text);
+    transition:transform .25s ease, opacity .25s ease;
+  }
+  .hamburger.active span:nth-child(1){transform:translateY(6px) rotate(45deg);}
+  .hamburger.active span:nth-child(2){opacity:0;}
+  .hamburger.active span:nth-child(3){transform:translateY(-6px) rotate(-45deg);}
+
+  .mobile-menu{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:var(--bg-off);
+    z-index:99;
+    padding:104px 24px 40px;
+    flex-direction:column;
+    gap:8px;
+    overflow-y:auto;
+  }
+  .mobile-menu.open{display:flex;}
+  .mobile-menu a:not(.btn){
+    font-size:24px;
+    font-family:'Gloock', serif;
+    padding-top:16px;
+    padding-bottom:16px;
+    border-bottom:1px solid var(--line);
+    color:var(--text);
+  }
+  .mobile-menu .btn{margin-top:24px;width:100%;}
+
+  @media (max-width:991px){
+    .nav-links{display:none;}
+    .hamburger{display:flex;}
+  }
+
+  /* Sekcije */
+  section{
+    padding-top:128px;
+    padding-bottom:128px;
+    position:relative;
+  }
+  @media (max-width:768px){
+    section{padding-top:80px;padding-bottom:80px;}
+  }
+  .section-off{background:var(--bg-off);}
+  .section-head{
+    max-width:720px;
+    margin-bottom:64px;
+  }
+  .section-head.center{
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+  }
+  .section-head.center p{margin-left:auto;margin-right:auto;}
+  .section-head h2{margin-bottom:20px;}
+
+  .reveal{
+    transform:translateY(12px);
+    transition:transform .8s cubic-bezier(.2,.7,.3,1);
+  }
+  .reveal.in-view{transform:translateY(0);}
+
+  /* HERO */
+  .hero{
+    background:var(--bg-off);
+    padding-top:64px;
+    padding-bottom:64px;
+    overflow:hidden;
+  }
+  .hero::before{
+    content:"";
+    position:absolute;
+    width:720px;
+    height:720px;
+    right:-160px;
+    top:-200px;
+    background:radial-gradient(circle, var(--accent-soft-2) 0%, rgba(215,229,240,0) 64%);
+    pointer-events:none;
+  }
+  .hero-grid{
+    position:relative;
+    display:grid;
+    grid-template-columns:1.05fr 0.95fr;
+    gap:64px;
+    align-items:center;
+  }
+  .hero-kicker{
+    display:inline-flex;
+    align-items:center;
+    gap:12px;
+    padding:8px 16px 8px 8px;
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:var(--radius-btn);
+    font-size:16px;
+    font-weight:600;
+    color:var(--text);
+    margin-bottom:32px;
+  }
+  .hero-kicker .dot{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:24px;
+    height:24px;
+    border-radius:50%;
+    background:var(--accent-soft);
+  }
+  .hero-kicker .dot::after{
+    content:"";
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    background:var(--accent);
+    box-shadow:0 0 0 4px var(--accent-glow);
+  }
+  .hero-copy,.hero-visual{min-width:0;}
+  .h1-box{container-type:inline-size;margin-bottom:28px;}
+  .hero h1{
+    font-size:9vw;
+    font-size:clamp(36px, 15cqi, 84px);
+    line-height:1.04;
+    letter-spacing:-0.01em;
+  }
+  .hero h1 .ln{display:block;white-space:nowrap;}
+  .hero-lead{
+    font-size:20px;
+    max-width:48ch;
+    margin-bottom:40px;
+  }
+  .hero-sub{display:none;}
+  .hero-lead .s{display:block;text-wrap:balance;}
+  .hero-lead .s + .s{margin-top:8px;}
+  .hero-tel svg{width:20px;height:20px;}
+  .hero-actions{
+    display:flex;
+    align-items:center;
+    gap:32px;
+    flex-wrap:wrap;
+  }
+  .hero-trust{
+    display:grid;
+    grid-template-columns:repeat(3, minmax(0, 1fr));
+    gap:32px;
+    margin-top:56px;
+    padding-top:32px;
+    border-top:1px solid var(--line);
+  }
+  .hero-trust div{display:flex;flex-direction:column;gap:4px;min-width:0;}
+  .hero-trust strong{
+    font-family:'Gloock', serif;
+    font-weight:400;
+    font-size:32px;
+    color:var(--accent);
+    line-height:1;
+  }
+  .hero-trust span{font-size:16px;line-height:1.4;color:var(--text-muted);}
+  .hero-trust .pl{font-family:'Cabin', sans-serif;font-style:normal;font-weight:600;}
+
+  .hero-visual{
+    position:relative;
+    padding-top:24px;
+    padding-bottom:48px;
+    padding-left:48px;
+  }
+  .arch{
+    position:relative;
+    border-radius:var(--radius-arch);
+    overflow:hidden;
+    aspect-ratio:4/5;
+    box-shadow:0 40px 80px -40px rgba(8,44,77,0.5);
+  }
+  .arch img{width:100%;height:100%;object-fit:cover;}
+  .arch-outline{
+    position:absolute;
+    top:0;
+    right:-24px;
+    width:calc(100% - 48px);
+    height:calc(100% - 24px);
+    border:1px solid var(--accent-line);
+    border-radius:var(--radius-arch);
+    pointer-events:none;
+  }
+  .hero-visual .arch{margin-left:0;}
+  .film-strip{
+    position:absolute;
+    top:48px;
+    left:-64px;
+    right:-320px;
+    height:112px;
+    overflow:hidden;
+    transform:rotate(-5deg);
+    transform-origin:left center;
+    background:var(--accent-deep);
+    -webkit-mask-image:linear-gradient(90deg, transparent 0, #000 64px);
+    mask-image:linear-gradient(90deg, transparent 0, #000 64px);
+    box-shadow:0 20px 40px -24px rgba(8,44,77,0.6);
+  }
+  .strip-roll{
+    transform:translate3d(calc(var(--s, 0) * -1px), 0, 0);
+    will-change:transform;
+  }
+  .reel{
+    display:flex;
+    gap:4px;
+    width:max-content;
+    padding:16px 0;
+    background-image:
+      repeating-linear-gradient(90deg, rgba(255,255,255,0.72) 0 8px, transparent 8px 20px),
+      repeating-linear-gradient(90deg, rgba(255,255,255,0.72) 0 8px, transparent 8px 20px);
+    background-size:100% 8px, 100% 8px;
+    background-position:0 4px, 0 calc(100% - 4px);
+    background-repeat:no-repeat;
+    animation:reel-run 84s linear infinite, reel-start 2.8s cubic-bezier(.12,.72,.16,1) both;
+    will-change:transform;
+  }
+  .reel img{
+    width:144px;
+    height:80px;
+    object-fit:cover;
+    flex-shrink:0;
+    border-radius:4px;
+  }
+  @keyframes reel-run{to{translate:-50% 0;}}
+  @keyframes reel-start{from{transform:translate3d(640px,0,0);}to{transform:translate3d(0,0,0);}}
+  .hero-inset{
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:40%;
+    aspect-ratio:4/5;
+    border-radius:var(--radius-sm);
+    overflow:hidden;
+    border:8px solid #fff;
+    box-shadow:0 24px 48px -24px rgba(8,44,77,0.45);
+    transform:rotate(-4deg);
+  }
+  .hero-inset img{width:100%;height:100%;object-fit:cover;}
+  .stamp{
+    position:absolute;
+    right:-16px;
+    bottom:64px;
+    width:136px;
+    height:136px;
+    border-radius:50%;
+    background:var(--accent);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 20px 40px -16px var(--accent-glow);
+  }
+  .stamp svg.ring{position:absolute;inset:8px;width:calc(100% - 16px);height:calc(100% - 16px);}
+  .stamp svg.ring text{
+    font-family:'Cabin', sans-serif;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:0.24em;
+    fill:#fff;
+    text-transform:uppercase;
+  }
+  .stamp svg.heart{width:28px;height:28px;}
+
+  @media (max-width:1100px){
+    .arch-outline{right:-8px;}
+  }
+  @media (max-width:991px){
+    .hero-grid{grid-template-columns:minmax(0, 1fr);gap:56px;}
+    .hero-visual{max-width:520px;margin:0 auto;width:100%;}
+  }
+  @media (max-width:768px){
+    .hero{padding-top:24px;padding-bottom:40px;}
+    .hero-grid{display:flex;flex-direction:column;gap:0;align-items:stretch;}
+    .hero-copy{display:contents;}
+    .h1-box{order:1;margin-bottom:0;}
+    .hero-sub{display:block;order:1;margin:4px 0 0;font-size:16px;font-weight:600;color:var(--accent);max-width:none;}
+    .ribbon{display:none;}
+    .service-body > p{display:none;}
+    .hero-visual{order:2;padding-top:12px;padding-bottom:16px;padding-left:16px;}
+    .hero-actions{order:3;gap:12px 24px;margin-bottom:24px;}
+    .hero-kicker{order:4;align-self:flex-start;margin-bottom:24px;}
+    .hero-lead{order:5;font-size:16px;margin-bottom:0;}
+    .hero-trust{order:6;gap:16px;margin-top:32px;padding-top:24px;}
+    .hero-actions .btn{width:100%;}
+    .hero-trust strong{font-size:28px;}
+    .arch{aspect-ratio:1/1;}
+    .arch img{object-position:50% 20%;}
+    .arch-outline{right:-12px;}
+    .film-strip{top:32px;left:-24px;right:-64px;height:84px;-webkit-mask-image:none;mask-image:none;}
+    .reel{padding:12px 0;}
+    .reel img{width:108px;height:60px;}
+    .hero-inset{width:28%;border-width:4px;left:0;}
+    .stamp{width:88px;height:88px;right:-4px;bottom:24px;}
+    .stamp svg.ring text{font-size:12px;letter-spacing:0.04em;}
+    .stamp svg.heart{width:20px;height:20px;}
+  }
+  @media (max-width:360px){
+    .btn{padding-left:20px;padding-right:20px;}
+    .hero-trust{gap:12px;}
+  }
+
+  /* Traka sa vrstama događaja */
+  .ribbon{
+    background:var(--accent-darker);
+    color:#fff;
+    padding-top:20px;
+    padding-bottom:20px;
+    overflow:hidden;
+  }
+  .ribbon ul{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:24px;
+    flex-wrap:wrap;
+    font-family:'Gloock', serif;
+    font-size:20px;
+  }
+  .ribbon li{display:flex;align-items:center;gap:24px;}
+  .ribbon li + li::before{
+    content:"";
+    width:8px;
+    height:8px;
+    transform:rotate(45deg);
+    background:var(--accent-soft-2);
+    opacity:0.7;
+  }
+  @media (max-width:768px){
+    .ribbon ul{font-size:16px;gap:12px 16px;}
+    .ribbon li{gap:16px;}
+  }
+
+  /* Uvod */
+  .intro{text-align:center;}
+  .intro .wrap{max-width:960px;}
+  .quote-mark{
+    width:56px;
+    height:40px;
+    color:var(--accent-soft-2);
+    margin:0 auto 24px;
+  }
+  .intro-text{
+    font-family:'Gloock', serif;
+    font-size:clamp(24px, 3.2vw, 36px);
+    line-height:1.36;
+    color:var(--text);
+    max-width:none;
+    margin:0 auto 32px;
+  }
+  .intro-text em{display:block;font-style:normal;color:var(--accent);}
+  .intro-sub{margin:0 auto;font-size:16px;}
+  .intro .ornament{margin-left:auto;margin-right:auto;}
+
+  /* Mediji */
+  .press-box{
+    display:grid;
+    grid-template-columns:auto 1fr;
+    gap:48px;
+    align-items:center;
+    background:var(--bg-off);
+    border:1px solid var(--line);
+    border-radius:var(--radius-card);
+    padding:40px 48px;
+    margin-top:96px;
+    text-align:left;
+  }
+  .press-cover{
+    width:132px;
+    border-radius:8px;
+    overflow:hidden;
+    transform:rotate(-3deg);
+    box-shadow:0 20px 40px -20px rgba(8,44,77,0.45);
+  }
+  .press-box h2{font-size:24px;margin-bottom:8px;}
+  .press-box p{margin-bottom:24px;}
+  .press-logos{
+    display:flex;
+    align-items:center;
+    gap:32px;
+    flex-wrap:wrap;
+  }
+  .press-logos img{
+    height:32px;
+    width:auto;
+    mix-blend-mode:multiply;
+    border-radius:4px;
+  }
+  @media (max-width:768px){
+    .press-box{grid-template-columns:1fr;padding:32px 24px;gap:28px;text-align:center;}
+    .press-cover{margin:0 auto;}
+    .press-logos{display:grid;grid-template-columns:repeat(2, auto);justify-content:center;justify-items:center;gap:16px 32px;}
+  }
+
+  /* Usluge */
+  .services-grid{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:32px;
+  }
+  .service-card{
+    display:flex;
+    flex-direction:column;
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:var(--radius-card);
+    overflow:hidden;
+    transition:box-shadow .3s ease, transform .3s ease;
+  }
+  .service-card:hover{
+    box-shadow:0 32px 64px -36px rgba(18,34,50,0.35);
+    transform:translateY(-4px);
+  }
+  .service-img{
+    position:relative;
+    aspect-ratio:16/10;
+    overflow:hidden;
+  }
+  .service-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease;}
+  .service-card:hover .service-img img{transform:scale(1.04);}
+  .service-tag{
+    position:absolute;
+    left:20px;
+    top:20px;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:8px 16px;
+    border-radius:var(--radius-btn);
+    background:rgba(255,255,255,0.92);
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--accent);
+  }
+  .service-tag svg{width:16px;height:16px;stroke:var(--accent);}
+  .service-body{padding:40px 36px;display:flex;flex-direction:column;flex:1;}
+  .service-body h3{font-size:28px;margin-bottom:12px;}
+  .checklist{margin-top:8px;margin-bottom:32px;display:grid;gap:12px;}
+  .checklist li{
+    display:flex;
+    gap:12px;
+    align-items:flex-start;
+    font-size:16px;
+    color:var(--text);
+    line-height:1.5;
+  }
+  .checklist svg{
+    width:20px;
+    height:20px;
+    flex-shrink:0;
+    stroke:var(--accent);
+    margin-top:4px;
+  }
+  .service-body .text-link{margin-top:auto;align-self:flex-start;}
+
+  .combo{
+    margin-top:32px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:32px;
+    background:var(--accent-soft);
+    border-radius:var(--radius-card);
+    padding:32px 40px;
+  }
+  .combo-left{display:flex;align-items:center;gap:24px;}
+  .combo-icon{
+    width:64px;
+    height:64px;
+    flex-shrink:0;
+    border-radius:50%;
+    background:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .combo-icon svg{width:28px;height:28px;stroke:var(--accent);}
+  .combo h3{font-size:24px;margin-bottom:4px;}
+  .combo p{margin:0;}
+
+  .moments{
+    margin-top:96px;
+  }
+  .moments-head{
+    text-align:center;
+    margin-bottom:32px;
+  }
+  .moments-head h3{font-size:32px;margin-bottom:12px;}
+  .moments-head p{margin:0 auto;max-width:44ch;}
+  .moments-grid{
+    display:grid;
+    grid-template-columns:repeat(4, minmax(0, 1fr));
+    gap:24px;
+  }
+  .moment{
+    border-radius:var(--radius-card);
+    background:#fff;
+    border:1px solid var(--line);
+    overflow:hidden;
+    transition:border-color .3s ease, box-shadow .3s ease;
+  }
+  .moment:hover{border-color:var(--accent-line);box-shadow:0 24px 48px -32px rgba(18,34,50,0.3);}
+  .moment img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:50% 25%;}
+  .moment-body{padding:24px;}
+  .moment h4{font-size:24px;}
+  .moment h4{
+    font-family:'Gloock', serif;
+    font-weight:400;
+    margin:0 0 8px;
+  }
+  .moment p{font-size:16px;margin:0;}
+
+  @media (max-width:991px){
+    .moments-grid{grid-template-columns:repeat(2, minmax(0, 1fr));}
+  }
+  @media (max-width:768px){
+    .services-grid{grid-template-columns:1fr;}
+    .service-body{padding:32px 24px;}
+    .service-body h3{font-size:24px;}
+    .combo{flex-direction:column;align-items:flex-start;padding:28px 24px;}
+    .combo-left{flex-direction:column;align-items:flex-start;gap:16px;}
+    .combo .btn{width:100%;}
+    .moments{margin-top:64px;}
+    .moments-head h3{font-size:28px;}
+    .checklist{margin-bottom:24px;}
+  }
+  @media (max-width:520px){
+    .moments-grid{gap:12px;}
+    .moment-body{padding:16px;}
+    .moment h4{font-size:20px;}
+    .moment p{font-size:16px;line-height:1.5;}
+  }
+
+  /* Zašto mi */
+  .why-grid{
+    display:grid;
+    grid-template-columns:0.9fr 1.1fr;
+    gap:96px;
+    align-items:center;
+  }
+  .collage{
+    position:relative;
+    min-height:600px;
+  }
+  .polaroid{
+    position:absolute;
+    background:#fff;
+    padding:12px 12px 48px;
+    border-radius:4px;
+    box-shadow:0 28px 56px -28px rgba(8,44,77,0.45);
+  }
+  .polaroid img{aspect-ratio:4/5;object-fit:cover;width:100%;}
+  .polaroid figcaption{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:12px;
+    text-align:center;
+    font-family:'Cabin', sans-serif;
+    font-style:italic;
+    font-size:16px;
+    color:var(--text-muted);
+  }
+  .polaroid::before{
+    content:"";
+    position:absolute;
+    top:-12px;
+    left:50%;
+    width:88px;
+    height:24px;
+    margin-left:-44px;
+    background:rgba(215,229,240,0.85);
+    transform:rotate(-3deg);
+  }
+  .polaroid.p1{width:64%;left:0;top:0;transform:rotate(-5deg);}
+  .polaroid.p1 figcaption{text-align:left;padding-left:24px;}
+  .polaroid.p2{width:58%;right:0;top:160px;transform:rotate(4deg);z-index:2;}
+  .collage .circle-deco{
+    position:absolute;
+    left:12%;
+    bottom:0;
+    width:160px;
+    height:160px;
+    border:1px dashed var(--accent-line);
+    border-radius:50%;
+  }
+
+  .why-copy,.collage{min-width:0;}
+  .why-list{display:grid;gap:8px;margin-top:40px;}
+  .why-item{
+    display:grid;
+    grid-template-columns:64px 1fr;
+    gap:20px;
+    padding-top:24px;
+    padding-bottom:24px;
+    border-top:1px solid var(--line);
+  }
+  .why-item:last-child{border-bottom:1px solid var(--line);}
+  .why-num{
+    font-family:'Gloock', serif;
+    font-size:36px;
+    line-height:1;
+    color:var(--accent-soft-2);
+    -webkit-text-stroke:1px var(--accent);
+  }
+  .why-item h3{font-size:24px;margin-bottom:8px;}
+  .why-item p{margin:0;}
+
+  @media (max-width:991px){
+    .why-grid{grid-template-columns:1fr;gap:64px;}
+    .collage{max-width:520px;width:100%;margin:0 auto;min-height:520px;}
+  }
+  @media (max-width:768px){
+    .collage{min-height:400px;}
+    .polaroid.p1{left:8px;}
+    .polaroid.p2{top:120px;right:12px;width:54%;}
+    .press-box h2{font-size:20px;}
+    .polaroid{padding:8px 8px 40px;}
+    .collage .circle-deco{width:112px;height:112px;}
+    .why-item{grid-template-columns:48px 1fr;gap:16px;}
+    .why-num{font-size:28px;}
+    .why-item h3{font-size:20px;}
+  }
+
+  /* Portfolio */
+  .gallery{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-auto-rows:220px;
+    grid-auto-flow:dense;
+    gap:16px;
+  }
+  .g-item{
+    position:relative;
+    border-radius:var(--radius-sm);
+    overflow:hidden;
+    background:var(--accent-soft);
+    cursor:zoom-in;
+    border:0;
+    padding:0;
+  }
+  .g-item img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease;}
+  .g-item::after{
+    content:attr(data-label);
+    position:absolute;
+    left:16px;
+    bottom:16px;
+    padding:8px 16px;
+    border-radius:var(--radius-btn);
+    background:rgba(255,255,255,0.92);
+    color:var(--accent);
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    opacity:0;
+    transform:translateY(8px);
+    transition:opacity .3s ease, transform .3s ease;
+  }
+  .g-item:hover img{transform:scale(1.05);}
+  .g-item:hover::after, .g-item:focus-visible::after{opacity:1;transform:translateY(0);}
+  @media (max-width:520px){.m-skriveno{display:none;}}
+  .g-item.tall{grid-row:span 2;}
+  .g-item.big{grid-column:span 2;grid-row:span 2;}
+  .g-cta{
+    grid-row:span 2;
+    position:relative;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    gap:12px;
+    padding:32px 28px;
+    border-radius:var(--radius-sm);
+    background:var(--accent);
+    color:#fff;
+  }
+  .g-cta::before{
+    content:"";
+    position:absolute;
+    top:-64px;
+    right:-64px;
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,0.2);
+    box-shadow:0 0 0 24px rgba(255,255,255,0.04), 0 0 0 48px rgba(255,255,255,0.03);
+  }
+  .g-cta-ico{
+    width:52px;
+    height:52px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.12);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:auto;
+  }
+  .g-cta-ico svg{width:24px;height:24px;stroke:#fff;}
+  .g-cta strong{font-family:'Gloock', serif;font-weight:400;font-size:28px;line-height:1.16;}
+  .g-cta span{font-size:16px;line-height:1.5;color:rgba(255,255,255,0.8);}
+  .g-cta .g-cta-link{display:block;color:#fff;font-weight:600;margin-top:8px;overflow-wrap:anywhere;}
+  @media (max-width:991px){
+    .gallery{grid-template-columns:repeat(2, 1fr);grid-auto-rows:200px;}
+  }
+  @media (max-width:520px){
+    .gallery{grid-auto-rows:160px;gap:12px;}
+    .g-item.big{grid-column:span 2;}
+    .g-cta{padding:20px;gap:8px;grid-column:span 2;grid-row:span 1;}
+    .g-cta-ico{display:none;}
+    .g-cta strong{font-size:20px;}
+    .g-cta span{font-size:12px;line-height:1.4;}
+    .g-cta .g-cta-link{font-size:12px;}
+  }
+
+  /* Lightbox */
+  .lightbox{
+    position:fixed;
+    inset:0;
+    z-index:200;
+    background:rgba(6,31,55,0.92);
+    display:none;
+    align-items:center;
+    justify-content:center;
+    padding:24px;
+  }
+  .lightbox.open{display:flex;}
+  .lightbox img{
+    max-height:88vh;
+    max-width:100%;
+    width:auto;
+    border-radius:var(--radius-sm);
+    box-shadow:0 40px 80px -24px rgba(0,0,0,0.6);
+  }
+  .lb-btn{
+    position:absolute;
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,0.3);
+    background:rgba(255,255,255,0.08);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+  }
+  .lb-btn svg{width:20px;height:20px;}
+  .lb-close{top:20px;right:20px;}
+  .lb-prev{left:20px;top:50%;margin-top:-24px;}
+  .lb-next{right:20px;top:50%;margin-top:-24px;}
+  @media (max-width:768px){
+    .lb-prev,.lb-next{top:auto;bottom:24px;margin-top:0;}
+    .lb-prev{left:calc(50% - 60px);}
+    .lb-next{right:calc(50% - 60px);}
+  }
+
+  /* Filmovi */
+  .films{
+    background:var(--accent-deep);
+    color:#fff;
+    overflow:hidden;
+  }
+  .films::before,
+  .films::after{
+    content:"";
+    position:absolute;
+    left:-32px;
+    right:-32px;
+    height:20px;
+    background-image:radial-gradient(circle at 12px 10px, rgba(255,255,255,0.14) 0 4px, transparent 5px);
+    background-size:32px 20px;
+    background-repeat:repeat-x;
+    transform:translate3d(calc(var(--fs, 0) * 1px), 0, 0);
+  }
+  .films::before{top:24px;}
+  .films::after{bottom:24px;}
+  .films .eyebrow{color:var(--accent-soft-2);}
+  .films h2,.films h3{color:#fff;}
+  .films .section-head p{color:rgba(255,255,255,0.76);}
+  .films-main{
+    display:grid;
+    grid-template-columns:minmax(0, 1.7fr) minmax(0, 1fr);
+    gap:24px;
+    align-items:stretch;
+  }
+  .film,.film-row{
+    font:inherit;
+    color:#fff;
+    text-align:left;
+    border:0;
+    padding:0;
+    cursor:pointer;
+    background:var(--accent-darker);
+    border-radius:var(--radius-sm);
+    overflow:hidden;
+  }
+  .film{position:relative;display:block;width:100%;}
+  .film > img{width:100%;height:100%;aspect-ratio:16/9;object-fit:cover;transition:transform .6s ease;}
+  .film:hover > img{transform:scale(1.04);}
+  .film::after{
+    content:"";
+    position:absolute;
+    inset:40% 0 0;
+    background:linear-gradient(180deg, rgba(6,31,55,0) 0%, rgba(6,31,55,0.88) 100%);
+    pointer-events:none;
+  }
+  .play{
+    position:absolute;
+    left:50%;
+    top:50%;
+    width:56px;
+    height:56px;
+    margin:-28px 0 0 -28px;
+    z-index:1;
+    border-radius:50%;
+    background:#fff;
+    color:var(--accent);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 12px 24px -8px rgba(6,31,55,0.6);
+    transition:transform .25s ease;
+  }
+  .play svg{width:24px;height:24px;}
+  .film:hover .play,.film-row:hover .play{transform:scale(1.08);}
+  .film-big .play{width:80px;height:80px;margin:-40px 0 0 -40px;}
+  .film-big .play svg{width:32px;height:32px;}
+  .film-cap{
+    position:absolute;
+    left:20px;
+    right:20px;
+    bottom:16px;
+    z-index:1;
+    display:block;
+  }
+  .film-cap strong,.film-txt strong{display:block;font-family:'Gloock', serif;font-weight:400;font-size:20px;line-height:1.2;}
+  .film-txt strong{font-size:24px;}
+  .film-big .film-cap strong{font-size:28px;}
+  .film-cap span,.film-txt span{display:block;font-size:16px;line-height:1.4;color:rgba(255,255,255,0.8);margin-top:4px;}
+  .film-list{display:grid;gap:16px;grid-auto-rows:1fr;min-width:0;}
+  .film-row{
+    display:grid;
+    grid-template-columns:minmax(0, 0.9fr) minmax(0, 1fr);
+    align-items:center;
+    gap:16px;
+    width:100%;
+    transition:background .25s ease;
+  }
+  .film-row:hover{background:var(--accent-dark);}
+  .film-thumb{position:relative;display:block;height:100%;}
+  .film-thumb img{width:100%;height:100%;aspect-ratio:16/10;object-fit:cover;}
+  .film-thumb .play{width:40px;height:40px;margin:-20px 0 0 -20px;}
+  .film-thumb .play svg{width:20px;height:20px;}
+  .film-txt{display:block;padding:12px 16px 12px 0;min-width:0;}
+  .films-refs{text-align:center;color:rgba(255,255,255,0.76);margin:40px auto 0;max-width:64ch;text-wrap:balance;}
+  .films-sub{font-size:24px;text-align:center;margin:64px 0 24px;}
+  .films-more{
+    display:grid;
+    grid-template-columns:repeat(4, minmax(0, 1fr));
+    gap:16px;
+  }
+  .films-more .film{display:flex;flex-direction:column;}
+  .films-more .film::after{display:none;}
+  .films-more .film > img{height:auto;}
+  .films-more .play{width:44px;height:44px;top:0;margin:calc(28.125% - 22px) 0 0 -22px;}
+  .films-more .play svg{width:20px;height:20px;}
+  .films-more .film-cap{position:static;padding:12px 16px 16px;}
+  .films-more .film-cap strong{font-size:16px;}
+  .films-more .film-cap span{font-size:12px;margin-top:0;}
+  .film-modal .film-frame{width:min(1120px, 100%);aspect-ratio:16/9;background:#000;border-radius:var(--radius-sm);overflow:hidden;}
+  .film-frame iframe{width:100%;height:100%;border:0;display:block;}
+  @media (max-width:991px){
+    .films-main{grid-template-columns:minmax(0, 1fr);}
+    .film-list{grid-auto-rows:auto;}
+    .films-more{grid-template-columns:repeat(2, minmax(0, 1fr));}
+    .film-thumb img{aspect-ratio:16/9;}
+  }
+  @media (max-width:768px){
+    .film-big .play{width:64px;height:64px;margin:-32px 0 0 -32px;}
+    .film-big .film-cap strong{font-size:24px;}
+    .film-big .film-cap{left:16px;right:16px;bottom:12px;}
+    .films-sub{font-size:20px;margin-top:48px;}
+    .film-txt span{font-size:12px;}
+    .film-row{grid-template-columns:minmax(0, 0.8fr) minmax(0, 1fr);gap:12px;}
+    .film-txt strong{font-size:20px;}
+  }
+
+  /* Proces */
+  .steps{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:32px;
+    position:relative;
+  }
+  .steps::before{
+    content:"";
+    position:absolute;
+    top:28px;
+    left:28px;
+    right:28px;
+    border-top:1px dashed var(--accent-line);
+  }
+  .step{position:relative;}
+  .step-num{
+    position:relative;
+    width:56px;
+    height:56px;
+    border-radius:50%;
+    background:#fff;
+    border:1px solid var(--accent-line);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:'Gloock', serif;
+    font-size:20px;
+    color:var(--accent);
+    margin-bottom:28px;
+    box-shadow:0 0 0 8px var(--bg);
+  }
+  .step h3{font-size:20px;margin-bottom:12px;}
+  .step p{font-size:16px;margin:0;}
+  @media (max-width:991px){
+    .steps{grid-template-columns:repeat(2, 1fr);row-gap:48px;}
+    .steps::before{display:none;}
+  }
+  @media (max-width:520px){
+    .steps{grid-template-columns:1fr;row-gap:40px;}
+  }
+
+  /* Recenzije */
+  .reviews{
+    display:grid;
+    grid-template-columns:repeat(3, minmax(0, 1fr));
+    gap:24px;
+    align-items:stretch;
+  }
+  .review{
+    display:flex;
+    flex-direction:column;
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:var(--radius-card);
+    padding:32px;
+    position:relative;
+    min-width:0;
+  }
+  .review p{flex:1;}
+  .review.feature{
+    grid-column:span 2;
+    background:var(--accent);
+    border-color:var(--accent);
+  }
+  .review.feature p, .review.feature .who strong{color:#fff;}
+  .review.feature p{font-size:20px;line-height:1.6;max-width:none;}
+  .review.feature .who span{color:rgba(255,255,255,0.7);}
+  .review.feature .stars svg{fill:#fff;}
+  .review.feature .q{color:rgba(255,255,255,0.2);}
+  .stars{display:flex;gap:4px;margin-bottom:20px;}
+  .stars svg{width:16px;height:16px;fill:var(--accent);}
+  .review .q{
+    position:absolute;
+    right:24px;
+    top:20px;
+    width:40px;
+    height:32px;
+    color:var(--accent-soft);
+  }
+  .review p{color:var(--text);font-size:16px;margin-bottom:24px;}
+  .who{display:flex;align-items:center;gap:12px;}
+  .avatar{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:var(--accent-soft);
+    color:var(--accent);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:'Gloock', serif;
+    font-size:16px;
+    flex-shrink:0;
+  }
+  .review.feature .avatar{background:rgba(255,255,255,0.16);color:#fff;}
+  .who strong{display:block;font-weight:600;font-size:16px;}
+  .who span{font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-faint);}
+  @media (max-width:991px){.reviews{grid-template-columns:repeat(2, minmax(0, 1fr));}}
+  @media (max-width:640px){
+    .reviews{grid-template-columns:minmax(0, 1fr);}
+    .review.feature{grid-column:auto;}
+    .review.feature p{font-size:16px;line-height:1.7;}
+    .review{padding:28px 24px;}
+  }
+
+  /* FAQ */
+  .faq-grid{
+    display:grid;
+    grid-template-columns:0.8fr 1.2fr;
+    gap:96px;
+    align-items:start;
+  }
+  .faq-aside{position:sticky;top:120px;min-width:0;}
+  .faq-list{min-width:0;}
+  .faq-aside .section-head{margin-bottom:32px;}
+  .faq-card{
+    background:var(--accent-soft);
+    border-radius:var(--radius-card);
+    padding:28px;
+  }
+  .faq-card strong{display:block;font-family:'Gloock', serif;font-weight:400;font-size:20px;margin-bottom:8px;}
+  .faq-card p{margin-bottom:20px;}
+  .faq-list details{
+    border-bottom:1px solid var(--line);
+  }
+  .faq-list details:first-child{border-top:1px solid var(--line);}
+  .faq-list summary{
+    list-style:none;
+    cursor:pointer;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:24px;
+    padding-top:28px;
+    padding-bottom:28px;
+    font-family:'Gloock', serif;
+    font-size:20px;
+    color:var(--text);
+  }
+  .faq-list summary::-webkit-details-marker{display:none;}
+  .faq-list summary .plus{
+    position:relative;
+    width:36px;
+    height:36px;
+    flex-shrink:0;
+    border-radius:50%;
+    border:1px solid var(--accent-line);
+    transition:background .25s ease, transform .3s ease;
+  }
+  .faq-list summary .plus::before,
+  .faq-list summary .plus::after{
+    content:"";
+    position:absolute;
+    left:50%;
+    top:50%;
+    width:12px;
+    height:2px;
+    transform:translate(-50%,-50%);
+    background:var(--accent);
+  }
+  .faq-list summary .plus::after{transform:translate(-50%,-50%) rotate(90deg);transition:transform .3s ease;}
+  .faq-list details[open] .plus{background:var(--accent-soft);}
+  .faq-list details[open] .plus::after{transform:translate(-50%,-50%) rotate(0deg);}
+  .faq-list details p{margin-top:-8px;margin-bottom:28px;padding-right:56px;}
+  @media (max-width:991px){
+    .faq-grid{grid-template-columns:1fr;gap:48px;}
+    .faq-aside{position:static;}
+  }
+  @media (max-width:768px){
+    .faq-list summary{font-size:20px;padding-top:24px;padding-bottom:24px;}
+    .faq-list details p{padding-right:0;}
+  }
+
+  /* Kontakt */
+
+  .availability{
+    display:flex;
+    align-items:center;
+    gap:16px;
+    background:#fff;
+    border:1px solid var(--accent-line);
+    border-radius:var(--radius-card);
+    padding:20px 24px;
+    margin-bottom:32px;
+  }
+  .availability svg{width:28px;height:28px;stroke:var(--accent);flex-shrink:0;}
+  .availability p{margin:0;color:var(--text);}
+  .availability strong{color:var(--accent);}
+  .contact-grid{
+    display:grid;
+    grid-template-columns:minmax(0, 0.85fr) minmax(0, 1.15fr);
+    gap:48px;
+  }
+  .contact-info{
+    position:relative;
+    overflow:hidden;
+    background:var(--accent-darker);
+    color:#fff;
+    border-radius:var(--radius-card);
+    padding:48px 40px;
+  }
+  .contact-info::after{
+    content:"";
+    position:absolute;
+    right:-80px;
+    bottom:-80px;
+    width:240px;
+    height:240px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,0.12);
+    box-shadow:0 0 0 32px rgba(255,255,255,0.03), 0 0 0 64px rgba(255,255,255,0.02);
+  }
+  .contact-info h3{color:#fff;font-size:28px;margin-bottom:12px;}
+  .contact-info > p{color:rgba(255,255,255,0.75);}
+  .info-row{
+    display:flex;
+    gap:16px;
+    align-items:flex-start;
+    margin-top:28px;
+    position:relative;
+    z-index:1;
+  }
+  .info-ico{
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.08);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+  }
+  .info-ico svg{width:20px;height:20px;stroke:#fff;}
+  .info-row div{font-size:16px;color:rgba(255,255,255,0.8);line-height:1.5;min-width:0;overflow-wrap:anywhere;}
+  .info-row strong{
+    display:block;
+    color:rgba(255,255,255,0.56);
+    font-weight:600;
+    font-size:12px;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    margin-bottom:4px;
+  }
+  .info-row a{color:#fff;border-bottom:1px solid rgba(255,255,255,0.24);}
+  .info-row a:hover{border-color:#fff;}
+
+  .contact-form{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:var(--radius-card);
+    padding:48px 40px;
+  }
+  .contact-form h3{font-size:28px;margin-bottom:8px;}
+  .contact-form > p{margin-bottom:32px;}
+  .form-row{
+    display:grid;
+    grid-template-columns:minmax(0, 1fr) minmax(0, 1fr);
+    gap:20px;
+  }
+  .field{
+    margin-bottom:20px;
+    min-width:0;
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+  }
+  .field label{
+    font-size:16px;
+    font-weight:600;
+    color:var(--text);
+  }
+  .field input,
+  .field select,
+  .field textarea{
+    font-family:'Cabin', sans-serif;
+    font-size:16px;
+    padding:12px 16px;
+    min-height:48px;
+    border:1px solid rgba(18,34,50,0.16);
+    border-radius:var(--radius-sm);
+    background:var(--bg-off);
+    color:var(--text);
+    outline:none;
+    width:100%;
+    min-width:0;
+    transition:border-color .2s ease, box-shadow .2s ease;
+  }
+  .field input:focus,
+  .field select:focus,
+  .field textarea:focus{
+    border-color:var(--accent);
+    box-shadow:0 0 0 4px var(--accent-glow);
+  }
+  .field textarea{resize:vertical;min-height:120px;}
+  .contact-form .btn{width:100%;margin-top:8px;}
+  .field .err{font-size:16px;line-height:1.4;color:#a3271c;}
+  .field.bad input{border-color:#a3271c;}
+  .form-ok{
+    margin:16px 0 0;
+    max-width:none;
+    padding:16px 20px;
+    border-radius:var(--radius-sm);
+    background:var(--accent-soft);
+    color:var(--accent-dark);
+    font-weight:600;
+    text-align:center;
+  }
+  @media (max-width:991px){
+    .contact-grid{grid-template-columns:minmax(0, 1fr);}
+    .contact-form{order:-1;}
+  }
+  @media (max-width:768px){
+    .contact-info,.contact-form{padding:36px 24px;}
+    .form-row{grid-template-columns:1fr;gap:0;}
+    .availability{align-items:flex-start;}
+  }
+
+  /* Završni CTA */
+  .final-cta{
+    position:relative;
+    overflow:hidden;
+    border-radius:var(--radius-card);
+    min-height:440px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#fff;
+    padding:80px 32px;
+    margin-top:128px;
+  }
+  .final-cta .bg{
+    position:absolute;
+    inset:0;
+    background-image:url('assets/zavrsni-kalemegdan.webp');
+    background-size:cover;
+    background-position:center 12%;
+  }
+  .final-cta .bg::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(180deg, rgba(6,31,55,0.64) 0%, rgba(6,31,55,0.84) 100%);
+  }
+  .final-inner{position:relative;z-index:1;max-width:640px;}
+  .final-cta .eyebrow{color:var(--accent-soft-2);}
+  .final-cta h2{color:#fff;margin-bottom:20px;}
+  .final-cta p{color:rgba(255,255,255,0.84);margin:0 auto 36px;max-width:48ch;}
+  .final-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+  .btn-ghost-light{
+    background:transparent;
+    color:#fff;
+    border-color:rgba(255,255,255,0.4);
+  }
+  .btn-ghost-light:hover{background:rgba(255,255,255,0.1);transform:translateY(-2px);}
+  @media (max-width:768px){
+    .final-cta{padding:64px 20px;min-height:0;margin-top:64px;}
+    .press-box{margin-top:64px;}
+    .final-actions .btn{width:100%;}
+  }
+
+  /* Footer */
+  footer{
+    background:var(--accent-deep);
+    color:rgba(255,255,255,0.72);
+    padding-top:80px;
+    padding-bottom:32px;
+  }
+  .footer-grid{
+    display:grid;
+    grid-template-columns:1.4fr 1fr 1fr 1fr;
+    gap:48px;
+    padding-bottom:48px;
+    border-bottom:1px solid rgba(255,255,255,0.12);
+  }
+  .footer-logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-family:'Gloock', serif;
+    font-size:24px;
+    color:#fff;
+    margin-bottom:16px;
+  }
+  .footer-logo img{width:40px;height:40px;object-fit:contain;}
+  footer p{color:rgba(255,255,255,0.6);font-size:16px;max-width:36ch;}
+  footer .foot-h{
+    color:#fff;
+    font-weight:700;
+    font-size:12px;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
+    margin:8px 0 20px;
+  }
+  footer ul{display:grid;gap:12px;}
+  footer ul a, footer ul li{font-size:16px;color:rgba(255,255,255,0.72);overflow-wrap:anywhere;}
+  footer ul a:hover{color:#fff;}
+  .footer-bottom{
+    padding-top:24px;
+    font-size:16px;
+    color:rgba(255,255,255,0.64);
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+  @media (max-width:991px){
+    .footer-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:520px){
+    .footer-grid{grid-template-columns:1fr;gap:36px;}
+    footer{padding-bottom:104px;}
+  }
+
+  /* Mobilna traka sa akcijama */
+  .mobile-bar{
+    display:none;
+    position:fixed;
+    left:12px;
+    right:12px;
+    bottom:12px;
+    z-index:90;
+    gap:8px;
+    padding:8px;
+    background:rgba(255,255,255,0.94);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+    border:1px solid var(--line);
+    border-radius:var(--radius-btn);
+    box-shadow:0 16px 40px -16px rgba(8,44,77,0.45);
+    transform:translateY(120%);
+    transition:transform .35s ease;
+  }
+  .mobile-bar.show{transform:translateY(0);}
+  .mobile-bar .btn{flex:1;padding:12px 16px;font-size:16px;}
+  .mobile-bar .call{flex:0 0 auto;width:48px;padding:0;}
+  @media (max-width:768px){
+    .mobile-bar{display:flex;}
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    .reveal{transform:none;transition:none;}
+    .reel{animation:none;}
+    .strip-roll{transform:none;}
+    .films::before,.films::after{transform:none;}
+    .btn,.service-card,.service-img img,.g-item img,.film > img,.play{transition:none;}
+  }
+</style>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Creative Vision · foto i video za venčanja, Kragujevac">
+<meta property="og:description" content="Fotografisanje i snimanje venčanja iz Kragujevca, u celoj Srbiji i regionu. 10+ godina, 200+ venčanja i projekata, ocena 4,8 na Google-u. Pogledajte filmove.">
+<meta property="og:image" content="https://sites.entro-websites.com/creativevision/assets/og.jpg">
+<meta property="og:url" content="https://sites.entro-websites.com/creativevision/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Creative Vision","url":"https://sites.entro-websites.com/creativevision/","telephone":"+381604100399","email":"office@creativevision.rs","image":"https://sites.entro-websites.com/creativevision/assets/og.jpg","address":{"@type":"PostalAddress","streetAddress":"Darinke Radović 17","addressLocality":"Kragujevac","postalCode":"34104","addressCountry":"RS"},"openingHours":"Mo-Su 09:00-22:00","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"39"}}
+</script>
+</head>
+<body>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></symbol>
+      <symbol id="i-quote" viewBox="0 0 56 40"><path d="M0 40V24C0 10 7 2 21 0l2 6c-7 2-11 6-11 12h10v22zm33 0V24C33 10 40 2 54 0l2 6c-7 2-11 6-11 12h10v22z" fill="currentColor"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" fill="none" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke-width="1.6"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z" fill="none" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5" fill="none" stroke-width="1.6"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke-width="1.6"/><path d="M12 7v5l3 3" fill="none" stroke-width="1.6" stroke-linecap="round"/></symbol>
+      <symbol id="i-insta" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="0.6" fill="none" stroke-width="1.6"/></symbol>
+      <symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 8h3l2-2h6l2 2h3v11H4z" fill="none" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="13" r="3.5" fill="none" stroke-width="1.6"/></symbol>
+      <symbol id="i-video" viewBox="0 0 24 24"><path d="M3 7.5h11a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H3z" fill="none" stroke-width="1.6" stroke-linejoin="round"/><path d="M15 10l6-3v10l-6-3" fill="none" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+      <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2" fill="none" stroke-width="1.6"/><path d="M3.5 10h17M8 3v4M16 3v4" fill="none" stroke-width="1.6" stroke-linecap="round"/></symbol>
+      <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></symbol>
+    </defs>
+  </svg>
+
+  <header id="site-header">
+    <div class="wrap nav-inner">
+      <a href="#top" class="logo">
+        <img src="assets/cv1-Recovered-1.png" alt="Creative Vision logo" width="177" height="132">
+        Creative Vision
+      </a>
+      <nav class="nav-links" aria-label="Glavni meni">
+        <a href="#filmovi">Filmovi</a>
+        <a href="#usluge">Usluge</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#utisci">Utisci</a>
+        <a href="#pitanja">Pitanja</a>
+        <a href="#kontakt" class="btn btn-primary nav-cta">Proverite svoj datum</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Otvorite meni" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#filmovi">Filmovi</a>
+    <a href="#usluge">Usluge</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#utisci">Utisci</a>
+    <a href="#pitanja">Pitanja</a>
+    <a href="#kontakt">Kontakt</a>
+    <a href="#kontakt" class="btn btn-primary">Proverite svoj datum</a>
+  </div>
+
+  <main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="hero-kicker"><span class="dot"></span>Rezervacije za 2027. su u toku</span>
+        <div class="h1-box">
+          <h1><span class="ln">Vaše venčanje,</span><span class="ln">kao <em>film</em>.</span></h1>
+        </div>
+        <p class="hero-sub">Fotografija i film venčanja, Kragujevac</p>
+        <p class="hero-lead"><span class="s">Tim fotografa i videografa iz Kragujevca, objavljivani od Vogue Korea do regionalnih izdanja.</span> <span class="s">Beležimo vaš dan onakav kakav jeste, iskreno, spontano i sa pažnjom prema detaljima.</span></p>
+        <div class="hero-actions">
+          <a href="#kontakt" class="btn btn-primary">Proverite svoj datum
+            <svg aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+          <a href="tel:+381604100399" class="text-link hero-tel"><svg aria-hidden="true" style="stroke:currentColor"><use href="#i-phone"/></svg>060 410 0399</a>
+          <a href="#filmovi" class="text-link">Pogledajte filmove <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+        <div class="hero-trust">
+          <div><strong>10<i class="pl">+</i></strong><span>godina na terenu</span></div>
+          <div><strong>200<i class="pl">+</i></strong><span>venčanja i projekata</span></div>
+          <div><strong>4,8</strong><span>na Google-u, 39 recenzija</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="film-strip" id="filmStrip" aria-hidden="true">
+          <div class="strip-roll">
+            <div class="reel">
+              <img src="assets/traka-1.webp" alt="" width="240" height="135"><img src="assets/traka-2.webp" alt="" width="240" height="135"><img src="assets/traka-3.webp" alt="" width="240" height="135"><img src="assets/traka-4.webp" alt="" width="240" height="135"><img src="assets/traka-5.webp" alt="" width="240" height="135"><img src="assets/traka-6.webp" alt="" width="240" height="135"><img src="assets/traka-7.webp" alt="" width="240" height="135">
+              <img src="assets/traka-1.webp" alt="" width="240" height="135"><img src="assets/traka-2.webp" alt="" width="240" height="135"><img src="assets/traka-3.webp" alt="" width="240" height="135"><img src="assets/traka-4.webp" alt="" width="240" height="135"><img src="assets/traka-5.webp" alt="" width="240" height="135"><img src="assets/traka-6.webp" alt="" width="240" height="135"><img src="assets/traka-7.webp" alt="" width="240" height="135">
+            </div>
+          </div>
+        </div>
+        <div class="arch-outline" aria-hidden="true"></div>
+        <div class="arch">
+          <img src="assets/hero-mladenci.webp" alt="Mladoženja ljubi mladu u čelo, venčanje u prirodi" fetchpriority="high" width="800" height="1000">
+        </div>
+        <figure class="hero-inset" style="margin:0;">
+          <img src="assets/hero-jezero.webp" alt="Mladenci zagrljeni na steni usred jezera" width="480" height="600">
+        </figure>
+        <div class="stamp" aria-hidden="true">
+          <svg class="ring" viewBox="0 0 120 120">
+            <defs><path id="ringPath" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs>
+            <text><textPath href="#ringPath">Foto &amp; video · Jedan tim · </textPath></text>
+          </svg>
+          <svg class="heart" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAKA -->
+  <div class="ribbon" aria-label="Šta beležimo">
+    <div class="wrap">
+      <ul>
+        <li>Venčanja</li>
+        <li>Krštenja</li>
+        <li>Rođendani i proslave</li>
+        <li>Porodično</li>
+        <li>Studio</li>
+        <li>Spotovi i reklame</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- UVOD -->
+  <section class="intro">
+    <div class="wrap reveal">
+      <svg class="quote-mark" aria-hidden="true"><use href="#i-quote"/></svg>
+      <p class="intro-text">Kasni šminka, promeni se vreme, bend podigne atmosferu iznad plana. <em>Vi uživate, mi držimo konce u rukama.</em></p>
+      <p class="intro-sub">Ne paničimo, ne dramatizujemo, rešavamo. Vi to možda nećete ni primetiti, i to je poenta.</p>
+      <svg class="ornament" viewBox="0 0 120 16" aria-hidden="true"><path d="M0 8h48M72 8h48" stroke="currentColor" stroke-opacity=".4"/><path d="M60 2l6 6-6 6-6-6z" fill="none" stroke="currentColor"/></svg>
+    </div>
+    <div class="wrap">
+      <div class="press-box reveal">
+        <div class="press-cover">
+          <img src="assets/magazin-vigour.webp" alt="Naslovna strana magazina Vigour sa fotografijom Creative Vision" loading="lazy" width="400" height="500">
+        </div>
+        <div>
+          <h2>Objavljivani u domaćim i međunarodnim magazinima</h2>
+          <p>Za nas je to potvrda jednog principa: kvalitet se dokazuje radom, ne rečima.</p>
+          <div class="press-logos">
+            <img src="assets/logo.jpg" alt="Logo magazina Vogue Korea" loading="lazy" width="316" height="84">
+            <img src="assets/hello-magazin-logo.jpg" alt="Logo magazina Hello!" loading="lazy" width="352" height="135">
+            <img src="assets/logo-blic.jpg" alt="Logo Blica" loading="lazy" width="352" height="135">
+            <img src="assets/n1-logo.jpg" alt="Logo televizije N1" loading="lazy" width="352" height="135">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILMOVI -->
+  <section id="filmovi" class="films">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Filmovi</span>
+        <h2>Pustite film i pogledajte kako izgleda</h2>
+        <p>Radimo kratke i dokumentarne filmove sa venčanja.</p>
+      </div>
+
+      <div class="films-main reveal">
+        <button type="button" class="film film-big" data-yt="z_lhK5m7KJc" data-title="Katarina i Boško, Čačak i Arilje">
+          <img src="assets/film-katarina-bosko.webp" alt="Kadar iz filma: Katarina i Boško" loading="lazy" width="1120" height="630">
+          <span class="play"><svg aria-hidden="true"><use href="#i-play"/></svg></span>
+          <span class="film-cap"><strong>Katarina i Boško</strong><span>Čačak i Arilje, 2025.</span></span>
+        </button>
+        <div class="film-list">
+          <button type="button" class="film-row" data-yt="kPv8ILd1-uQ" data-title="Stefan i Anđelija, manastir Divostin">
+            <span class="film-thumb"><img src="assets/film-divostin.webp" alt="" loading="lazy" width="480" height="270"><span class="play"><svg aria-hidden="true"><use href="#i-play"/></svg></span></span>
+            <span class="film-txt"><strong>Stefan i Anđelija</strong><span>Manastir Divostin</span></span>
+          </button>
+          <button type="button" class="film-row" data-yt="72oc_A2lieU" data-title="Anka i Stefan, Metropol Palace, Beograd">
+            <span class="film-thumb"><img src="assets/film-metropol.webp" alt="" loading="lazy" width="480" height="270"><span class="play"><svg aria-hidden="true"><use href="#i-play"/></svg></span></span>
+            <span class="film-txt"><strong>Anka i Stefan</strong><span>Metropol Palace, Beograd</span></span>
+          </button>
+          <button type="button" class="film-row" data-yt="F8nQqTyHRzA" data-title="Anđela i Stefan, Lazarevac">
+            <span class="film-thumb"><img src="assets/film-lazarevac.webp" alt="" loading="lazy" width="480" height="270"><span class="play"><svg aria-hidden="true"><use href="#i-play"/></svg></span></span>
+            <span class="film-txt"><strong>Anđela i Stefan</strong><span>Kratak film, Lazarevac</span></span>
+          </button>
+        </div>
+      </div>
+
+      <h3 class="films-sub reveal">Krštenja, muzički spotovi i reklame</h3>
+      <div class="films-more reveal">
+        <button type="button" class="film" data-yt="NVTzE0eRxvo" data-title="Tadej, krštenje u Kragujevcu">
+          <img src="assets/film-krstenje.webp" alt="Kadar iz filma sa krštenja" loading="lazy" width="640" height="360">
+          <span class="play"><svg aria-hidden="true"><use href="#i-play"/></svg></span>
+          <span class="film-cap"><strong>Tadej</strong><span>Krštenje, Kragujevac</span></span>
+        </button>
+        <button type="button" class="film" data-yt="qW78K52AVFY" data-title="AN NA, Luda">
+          <img src="assets/spot-anna-luda.webp" alt="Naslovni kadar spota Luda" loading="lazy" width="640" height="360">
+          <span class="play"><svg aria-hidden="true"><use href="#i-play"/></svg></span>
+          <span class="film-cap"><strong>AN NA, Luda</strong><span>Muzički spot</span></span>
+        </button>
+        <button type="button" class="film" data-yt="xoFqaNrwXZo" data-title="Jelena Jecoli Ristivojević, Žena zmaj">
+          <img src="assets/spot-zena-zmaj.webp" alt="Kadar iz spota Žena zmaj: pevačica u napuštenoj hali" loading="lazy" width="640" height="360">
+          <span class="play"><svg aria-hidden="true"><use href="#i-play"/></svg></span>
+          <span class="film-cap"><strong>Žena zmaj</strong><span>Jelena Jecoli Ristivojević</span></span>
+        </button>
+        <button type="button" class="film" data-yt="sxSW1vLnGI8" data-title="Buzz Sneakers Station, reklama">
+          <img src="assets/reklama-buzz.webp" alt="Kadar iz reklame za Buzz Sneakers Station" loading="lazy" width="480" height="270">
+          <span class="play"><svg aria-hidden="true"><use href="#i-play"/></svg></span>
+          <span class="film-cap"><strong>Buzz Sneakers Station</strong><span>Reklama</span></span>
+        </button>
+      </div>
+      <p class="films-refs reveal">Pred našim objektivom bili su i AN NA, Milan Bujaković, Kristina Jakšić, Vlado Usiljanin iz Paradiso benda i FK Šušica.</p>
+    </div>
+  </section>
+
+  <!-- USLUGE -->
+  <section id="usluge" class="section-off">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Usluge</span>
+        <h2>Fotografija i film vašeg venčanja, <em>iz jedne ruke</em></h2>
+        <p>Usklađen stil, jedan dogovor i manje organizacije za vas.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card reveal">
+          <div class="service-img">
+            <img src="assets/usluga-fotografisanje.webp" alt="Mladenci silaze niz mermerne stepenice" loading="lazy" width="800" height="1000">
+            <span class="service-tag"><svg aria-hidden="true"><use href="#i-camera"/></svg>Fotografija</span>
+          </div>
+          <div class="service-body">
+            <h3>Fotografisanje venčanja</h3>
+            <p>Pratimo vašu priču od prvih priprema do poslednjeg plesa, smireno i sa osećajem za ritam dana.</p>
+            <ul class="checklist">
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Pripreme, ceremonija, fotosešn mladenaca i proslava</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Prirodna obrada, a deo fotografija dobija filmski ton</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Photobook umesto standardnog albuma, po želji</li>
+            </ul>
+            <a href="#kontakt" class="text-link">Pitajte za cenu <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-img">
+            <img src="assets/usluga-snimanje.webp" alt="Kadar iz filma: mladenci se drže za ruke" loading="lazy" width="960" height="540">
+            <span class="service-tag"><svg aria-hidden="true"><use href="#i-video"/></svg>Film</span>
+          </div>
+          <div class="service-body">
+            <h3>Snimanje venčanja</h3>
+            <p>Ne snimamo samo događaj. Gradimo film koji ima tempo, emociju i dugoročnu vrednost.</p>
+            <ul class="checklist">
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Kratak film, dokumentarni film ili oba</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Full HD, 2K ili 4K, po vašem izboru</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Muziku za kratak film birate vi, ili je mi predložimo</li>
+            </ul>
+            <a href="#kontakt" class="text-link">Pitajte za cenu <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="combo reveal">
+        <div class="combo-left">
+          <div class="combo-icon"><svg aria-hidden="true"><use href="#i-camera"/></svg></div>
+          <div>
+            <h3>Foto i video zajedno</h3>
+            <p>Ne nudimo gotove pakete, nego plan po meri vašeg dana.</p>
+          </div>
+        </div>
+        <a href="#kontakt" class="btn btn-primary">Proverite svoj datum</a>
+      </div>
+
+      <div class="moments">
+        <div class="moments-head reveal">
+          <h3>I ostali trenuci koje čuvamo</h3>
+          <p>Od prvog plesa do prvog rođendana, onako kako su se zaista desili.</p>
+        </div>
+        <div class="moments-grid reveal">
+          <div class="moment">
+            <img src="assets/trenutak-krstenje.webp" alt="Sveštenik miropomazuje bebu na krštenju" loading="lazy" width="640" height="427">
+            <div class="moment-body">
+              <h4>Krštenja</h4>
+              <p>Diskretno, nenametljivo i sa poštovanjem prema obredu.</p>
+            </div>
+          </div>
+          <div class="moment">
+            <img src="assets/trenutak-rodjendan.webp" alt="Devojka drži rođendansku tortu među zlatnim balonima u studiju" loading="lazy" width="560" height="700">
+            <div class="moment-body">
+              <h4>Rođendani i proslave</h4>
+              <p>Kada krene muzika, tu smo u pokretu. Vi slavite, mi hvatamo osmehe.</p>
+            </div>
+          </div>
+          <div class="moment">
+            <img src="assets/trenutak-porodica.webp" alt="Majka podiže bebu u zagrljaj tokom porodičnog fotografisanja" loading="lazy" width="560" height="700">
+            <div class="moment-body">
+              <h4>Porodična fotografisanja</h4>
+              <p>Prirodno, bez ukočenih poza i bez pritiska.</p>
+            </div>
+          </div>
+          <div class="moment">
+            <img src="assets/trenutak-studio.webp" alt="Snimanje u fotografskom studiju Creative Vision u Kragujevcu: snimatelj sa kamerom i klijent" loading="lazy" width="800" height="600">
+            <div class="moment-body">
+              <h4>Studio u Kragujevcu</h4>
+              <p>Portreti, trudnice, modeli i poslovne fotografije, najčešće za 3-7 dana.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Portfolio</span>
+        <h2>Kadrovi sa venčanja, proslava i iz studija</h2>
+        <p>Kliknite na fotografiju da je pogledate uvećanu.</p>
+      </div>
+      <div class="gallery reveal" id="gallery">
+        <button type="button" class="g-item big" data-label="Venčanje"><img src="assets/rad-gruzansko.webp" alt="Mladenci na drvenom molu, Gružansko jezero" loading="lazy" width="1280" height="853"></button>
+        <button type="button" class="g-item tall" data-label="Prvi ples"><img src="assets/rad-ples-kragujevac.webp" alt="Prvi ples mladenaca u Kragujevcu, crno-bela fotografija" loading="lazy" width="667" height="1000"></button>
+        <button type="button" class="g-item" data-label="Detalji"><img src="assets/rad-burme.webp" alt="Burme sa ugraviranim imenima" loading="lazy" width="800" height="534"></button>
+        <button type="button" class="g-item" data-label="Proslava"><img src="assets/rad-torta.webp" alt="Mladenci seku tortu među prskalicama, Kragujevac" loading="lazy" width="800" height="534"></button>
+        <button type="button" class="g-item tall" data-label="Venčanje"><img src="assets/rad-woodland.webp" alt="Mladoženja naginje mladu i ljubi je, Woodland" loading="lazy" width="666" height="1000"></button>
+        <button type="button" class="g-item tall" data-label="Venčanje"><img src="assets/rad-topola.webp" alt="Mladenci u drvoredu u Topoli" loading="lazy" width="667" height="1000"></button>
+        <button type="button" class="g-item tall" data-label="Porodično"><img src="assets/rad-porodica.webp" alt="Otac baca bebu u vazduh na porodičnom fotografisanju" loading="lazy" width="667" height="1000"></button>
+        <div class="g-cta">
+          <span class="g-cta-ico"><svg aria-hidden="true"><use href="#i-insta"/></svg></span>
+          <strong>Još radova na Instagramu</strong>
+          <span>Preko 8.000 pratilaca prati naša najnovija venčanja i snimanja.</span>
+          <span class="g-cta-link">@creativevisionprodukcija</span>
+        </div>
+        <button type="button" class="m-skriveno g-item tall" data-label="Venčanje"><img src="assets/rad-ples-beograd.webp" alt="Mladoženja naginje mladu pod krošnjom u Beogradu" loading="lazy" width="666" height="1000"></button>
+        <button type="button" class="g-item big" data-label="Crkveno venčanje"><img src="assets/rad-crkva.webp" alt="Mladoženja ljubi mladu na crkvenom venčanju" loading="lazy" width="1280" height="720"></button>
+        <button type="button" class="m-skriveno g-item" data-label="Modeli"><img src="assets/rad-model.webp" alt="Silueta sa kišobranom ispred osvetljene fontane" loading="lazy" width="800" height="450"></button>
+        <button type="button" class="m-skriveno g-item" data-label="Krštenje"><img src="assets/rad-krstenje.webp" alt="Detalj sa krštenja: bebine nogice" loading="lazy" width="640" height="800"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ZAŠTO MI -->
+  <section id="zasto" class="section-off">
+    <div class="wrap why-grid">
+      <div class="collage reveal" aria-hidden="true">
+        <span class="circle-deco"></span>
+        <figure class="polaroid p1" style="margin:0;">
+          <img src="assets/zasto-mladenci.webp" alt="" loading="lazy" width="442" height="760">
+          <figcaption>opušteno</figcaption>
+        </figure>
+        <figure class="polaroid p2" style="margin:0;">
+          <img src="assets/zasto-jezero.webp" alt="" loading="lazy" width="608" height="760">
+          <figcaption>trenutak koji ostaje</figcaption>
+        </figure>
+      </div>
+      <div class="reveal why-copy">
+        <span class="eyebrow">Zašto nama</span>
+        <h2>Zašto nam ljudi poklanjaju <em>najvažnije trenutke</em></h2>
+        <div class="why-list">
+          <div class="why-item">
+            <span class="why-num">01</span>
+            <div>
+              <h3>Jedan tim, bez komplikacija</h3>
+              <p>Foto i video su kod nas na jednom mestu. Ne koordinirate dve ekipe, tri poziva i pet dogovora.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <span class="why-num">02</span>
+            <div>
+              <h3>Znamo da vas opustimo</h3>
+              <p>Kada treba, jasno vas usmerimo. Kada krene smeh, samo pratimo. I nećemo snimati ljude kada jedu.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <span class="why-num">03</span>
+            <div>
+              <h3>Iskustvo koje daje mir</h3>
+              <p>Više od 10 godina i 200+ venčanja i projekata. Pomažemo i oko satnice, lokacija i organizacije, da dan teče mirno.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <span class="why-num">04</span>
+            <div>
+              <h3>Svi uspešni kadrovi, bez ograničenja</h3>
+              <p>Ne ograničavamo broj fotografija: dobijate sve uspešne kadrove. Neke fotografije stignu već za 24 sata.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCES -->
+  <section id="proces">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Kako radimo</span>
+        <h2>Od prve poruke do gotovog filma, <em>bez stresa</em></h2>
+      </div>
+      <div class="steps reveal">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Pošaljete datum</h3>
+          <p>Datum, lokacija i okviran plan dana su dovoljni. Dostupnost javljamo u roku od 24-48 sati.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Razgovor i plan</h3>
+          <p>Upoznajemo vas i zajedno pravimo plan koji ima smisla baš za vas, uz pomoć oko satnice.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Dan venčanja</h3>
+          <p>Mi brinemo o organizaciji fotografisanja i snimanja, a vi o gostima.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <h3>Obrada i isporuka</h3>
+          <p>Selekcija, obrada i montaža. Isporuka je u proseku za 3-4 nedelje.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UTISCI -->
+  <section id="utisci" class="section-off">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Utisci</span>
+        <h2>Šta kažu mladenci i klijenti</h2>
+        <p>Ocena 4,8 na Google-u iz 39 recenzija.</p>
+      </div>
+      <div class="reviews reveal">
+        <figure class="review feature" style="margin:0;">
+          <svg class="q" aria-hidden="true"><use href="#i-quote"/></svg>
+          <div class="stars" aria-label="Ocena 5 od 5"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <p>Njihove fotografije nisu obične fotografije, njihovi snimci diraju pravo u srce i mame suze na oči. Oni pričaju priču. To nije samo običan svadbeni snimak već profesionalni film koji beleži čitav dan venčanja. (skraćeno)</p>
+          <figcaption class="who"><span class="avatar">M</span><div><strong>Marijana Danilović</strong><span>Google recenzija, septembar 2026.</span></div></figcaption>
+        </figure>
+        <figure class="review" style="margin:0;">
+          <svg class="q" aria-hidden="true"><use href="#i-quote"/></svg>
+          <div class="stars" aria-label="Ocena 5 od 5"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <p>Prelep je video! Suze su mi krenule, sve si mi emocije probudio! Ne mogu da odlučim da li je lepši onaj prvi, romantični deo ili onaj ludi sa žurkom. (skraćeno)</p>
+          <figcaption class="who"><span class="avatar">K</span><div><strong>Katarina M.</strong><span>Instagram preporuka</span></div></figcaption>
+        </figure>
+        <figure class="review" style="margin:0;">
+          <svg class="q" aria-hidden="true"><use href="#i-quote"/></svg>
+          <div class="stars" aria-label="Ocena 5 od 5"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <p>Najbolja ekipa ikada! Profesionalizam pre svega, puno smeha, zabave, prelepih ideja i fotkanje do besvesti. A konačan rezultat nema cenu!</p>
+          <figcaption class="who"><span class="avatar">J</span><div><strong>Jelena Ž.</strong><span>Google recenzija</span></div></figcaption>
+        </figure>
+        <figure class="review" style="margin:0;">
+          <svg class="q" aria-hidden="true"><use href="#i-quote"/></svg>
+          <div class="stars" aria-label="Ocena 5 od 5"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <p>Odlična ekipa - energični, pozitivni i profesionalni. Izabrali smo „photobook“ umesto standardnog albuma i oduševili smo se kvalitetom photobook-a. Sve preporuke!</p>
+          <figcaption class="who"><span class="avatar">A</span><div><strong>Ana M.</strong><span>Google recenzija</span></div></figcaption>
+        </figure>
+        <figure class="review" style="margin:0;">
+          <svg class="q" aria-hidden="true"><use href="#i-quote"/></svg>
+          <div class="stars" aria-label="Ocena 5 od 5"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <p>Strpljenje, kreativnost i osećaj za estetiku su na vrhunskom nivou. Studio je sladak, ali fleksibilan i lako se prilagođava konceptu. (skraćeno)</p>
+          <figcaption class="who"><span class="avatar">T</span><div><strong>Tijana Petrović</strong><span>Google recenzija</span></div></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- PITANJA -->
+  <section id="pitanja">
+    <div class="wrap faq-grid">
+      <div class="faq-aside reveal">
+        <div class="section-head">
+          <span class="eyebrow">Česta pitanja</span>
+          <h2>Pre nego što nam pišete</h2>
+          <p>Odgovori na pitanja koja mladenci najčešće postavljaju u prvoj poruci.</p>
+        </div>
+        <div class="faq-card">
+          <strong>Niste našli odgovor?</strong>
+          <p>Pozovite nas ili pošaljite poruku.</p>
+          <a href="tel:+381604100399" class="text-link">060 410 0399 <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+      <div class="faq-list reveal">
+        <details open>
+          <summary>Da li radite širom Srbije i u inostranstvu?<span class="plus" aria-hidden="true"></span></summary>
+          <p>Da. Radimo širom Srbije, a po dogovoru i u inostranstvu. Lokacija nam nikada nije prepreka.</p>
+        </details>
+        <details>
+          <summary>Koliko košta?<span class="plus" aria-hidden="true"></span></summary>
+          <p>Svaki upit posmatramo pojedinačno, jer ne nudimo gotove pakete. Što više znamo unapred, to brže možemo da vam damo konkretnu ponudu.</p>
+        </details>
+        <details>
+          <summary>Koliko unapred treba rezervisati termin?<span class="plus" aria-hidden="true"></span></summary>
+          <p>Za venčanja preporučujemo 6 do 12 meseci unapred, posebno za popularne termine u sezoni. Dovoljno je da nam pošaljete datum, lokaciju i okviran plan dana.</p>
+        </details>
+        <details>
+          <summary>Šta ako ne znamo da poziramo?<span class="plus" aria-hidden="true"></span></summary>
+          <p>Ne morate da znate. Naš pristup je prirodan i vođen: pomažemo vam da se opustite i usmeravamo vas tako da sve izgleda spontano.</p>
+        </details>
+        <details>
+          <summary>Kako izgleda obrada fotografija?<span class="plus" aria-hidden="true"></span></summary>
+          <p>Sve fotografije prolaze osnovnu profesionalnu obradu: korekciju svetla, kontrasta i oštrine. Deo fotografija dobija i naš prepoznatljiv, blago filmski ton.</p>
+        </details>
+        <details>
+          <summary>Koliko se čeka na fotografije i video?<span class="plus" aria-hidden="true"></span></summary>
+          <p>Zavisi od vrste fotografisanja ili snimanja. Za neka snimanja su potrebne 3-4 nedelje, a neke fotografije stignu u roku od 24 sata. Tačan rok dogovaramo na razgovoru.</p>
+        </details>
+        <details>
+          <summary>Koliko traje fotografisanje na dan venčanja?<span class="plus" aria-hidden="true"></span></summary>
+          <p>Trajanje zavisi od vaših potreba. Možemo pokriti deo dana ili kompletan događaj, od priprema do završetka proslave.</p>
+        </details>
+        <details>
+          <summary>Da li objavljujete sve fotografije na Instagramu?<span class="plus" aria-hidden="true"></span></summary>
+          <p>Ne. Nijedna fotografija se ne objavljuje bez vašeg odobrenja. Sve objave dogovaramo zajedno.</p>
+        </details>
+      </div>
+    </div>
+
+    <!-- ZAVRŠNI CTA -->
+    <div class="wrap">
+      <div class="final-cta reveal">
+        <div class="bg" role="img" aria-label="Mladenci na klupi na Kalemegdanu, u pozadini Pobednik"></div>
+        <div class="final-inner">
+          <span class="eyebrow">Venčanje se dešava jednom</span>
+          <h2>Kadrovi ostaju zauvek</h2>
+          <p>Radimo ograničen broj venčanja godišnje, da bismo svakom paru posvetili punu pažnju. Zato se datumi često popune ranije.</p>
+          <div class="final-actions">
+            <a href="#kontakt" class="btn btn-light" data-focus="ime">Proverite svoj datum</a>
+            <a href="tel:+381604100399" class="btn btn-ghost-light"><svg aria-hidden="true" style="stroke:currentColor"><use href="#i-phone"/></svg>060 410 0399</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section id="kontakt" class="contact section-off">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Kontakt</span>
+        <h2>Proverite da li je vaš datum <em>još slobodan</em></h2>
+        <p>Pošaljite datum i lokaciju. Javljamo se u roku od 24-48 sati sa dostupnošću i ponudom.</p>
+      </div>
+
+      <div class="availability reveal">
+        <svg aria-hidden="true"><use href="#i-calendar"/></svg>
+        <p><strong>Rezervacije za 2027. su u toku.</strong> Ne morate imati sve detalje, dovoljan je datum.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Tu smo za vas</h3>
+          <p>Kancelarije su u Beogradu i Kragujevcu, a fotografski studio u Kragujevcu. Radimo širom Srbije i regiona.</p>
+
+          <div class="info-row">
+            <span class="info-ico"><svg aria-hidden="true"><use href="#i-phone"/></svg></span>
+            <div><strong>Telefon</strong><a href="tel:+381604100399">060 410 0399</a></div>
+          </div>
+          <div class="info-row">
+            <span class="info-ico"><svg aria-hidden="true"><use href="#i-mail"/></svg></span>
+            <div><strong>Email</strong><a href="mailto:office@creativevision.rs">office@creativevision.rs</a></div>
+          </div>
+          <div class="info-row">
+            <span class="info-ico"><svg aria-hidden="true"><use href="#i-pin"/></svg></span>
+            <div><strong>Studio</strong>Darinke Radović 17, Kragujevac. Parking je u blizini.</div>
+          </div>
+          <div class="info-row">
+            <span class="info-ico"><svg aria-hidden="true"><use href="#i-clock"/></svg></span>
+            <div><strong>Radno vreme</strong>Svaki dan 09-22</div>
+          </div>
+          <div class="info-row">
+            <span class="info-ico"><svg aria-hidden="true"><use href="#i-insta"/></svg></span>
+            <div><strong>Instagram</strong>@creativevisionprodukcija</div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" data-forma="demo" novalidate>
+          <!-- DEMO FORMA: ne šalje podatke, samo pokazuje poruku o uspehu.
+               Posle kupovine poveži slanje na office@creativevision.rs u funkciji posaljiUpit(). -->
+          <h3>Pošaljite upit za termin</h3>
+          <p>Dovoljno je da popunite osnovno, ostalo dogovaramo u razgovoru.</p>
+          <div class="form-row">
+            <div class="field">
+              <label for="ime">Vaše ime</label>
+              <input type="text" id="ime" name="ime" placeholder="Kako da vam se obratimo" autocomplete="name" required>
+              <small class="err" hidden>Upišite svoje ime.</small>
+            </div>
+            <div class="field">
+              <label for="telefon">Telefon</label>
+              <input type="tel" id="telefon" name="telefon" placeholder="06X XXX XXXX" autocomplete="tel" required>
+              <small class="err" hidden>Upišite broj telefona, da možemo da vam se javimo.</small>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="dogadjaj">Šta planirate</label>
+              <select id="dogadjaj" name="dogadjaj">
+                <option>Venčanje</option>
+                <option>Krštenje</option>
+                <option>Rođendan ili proslava</option>
+                <option>Porodično fotografisanje</option>
+                <option>Studijsko fotografisanje</option>
+                <option>Muzički spot ili reklama</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="usluga">Šta vam treba</label>
+              <select id="usluga" name="usluga">
+                <option>Foto i video</option>
+                <option>Samo fotografija</option>
+                <option>Samo video</option>
+                <option>Još ne znam</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="datum">Datum</label>
+              <input type="date" id="datum" name="datum" min="2026-11-09">
+            </div>
+            <div class="field">
+              <label for="lokacija">Grad ili lokacija</label>
+              <input type="text" id="lokacija" name="lokacija" placeholder="npr. Kragujevac, restoran...">
+            </div>
+          </div>
+          <div class="field">
+            <label for="poruka">Poruka</label>
+            <textarea id="poruka" name="poruka" placeholder="Okviran plan dana, broj gostiju, sve što vam je važno"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Proverite svoj datum
+            <svg aria-hidden="true"><use href="#i-arrow"/></svg>
+          </button>
+          <p class="form-ok" role="status" hidden>Hvala! Upit je primljen. Javljamo se u roku od 24-48 sati.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a href="#top" class="footer-logo">
+            <img src="assets/cv1-Recovered-1.png" alt="Creative Vision logo" loading="lazy" width="177" height="132">
+            Creative Vision
+          </a>
+          <p>Fotografisanje i snimanje venčanja i važnih životnih trenutaka u Srbiji i regionu.</p>
+        </div>
+        <div>
+          <p class="foot-h">Usluge</p>
+          <ul>
+            <li><a href="#usluge">Fotografisanje venčanja</a></li>
+            <li><a href="#usluge">Snimanje venčanja</a></li>
+            <li><a href="#filmovi">Filmovi i spotovi</a></li>
+            <li><a href="#usluge">Studijsko fotografisanje</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="foot-h">Sajt</p>
+          <ul>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#utisci">Utisci</a></li>
+            <li><a href="#pitanja">Česta pitanja</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="foot-h">Kontakt</p>
+          <ul>
+            <li><a href="tel:+381604100399">060 410 0399</a></li>
+            <li><a href="mailto:office@creativevision.rs">office@creativevision.rs</a></li>
+            <li>Darinke Radović 17, Kragujevac</li>
+            <li>Svaki dan 09-22</li>
+            <li>@creativevisionprodukcija na Instagramu</li>
+            <li>creativevisionvideos na Facebooku</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Creative Vision. Sva prava zadržana.</span>
+        <span>Fotografisanje i snimanje venčanja · Srbija i region</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-bar" id="mobileBar">
+    <a href="tel:+381604100399" class="btn btn-outline call" aria-label="Pozovite Creative Vision"><svg style="stroke:currentColor"><use href="#i-phone"/></svg></a>
+    <a href="#kontakt" class="btn btn-primary">Proverite svoj datum</a>
+  </div>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Pregled fotografije">
+    <button class="lb-btn lb-close" id="lbClose" aria-label="Zatvorite"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <button class="lb-btn lb-prev" id="lbPrev" aria-label="Prethodna fotografija"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+    <img id="lbImg" alt="" hidden>
+    <button class="lb-btn lb-next" id="lbNext" aria-label="Sledeća fotografija"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+  </div>
+
+  <div class="lightbox film-modal" id="filmModal" role="dialog" aria-modal="true" aria-label="Pregled filma">
+    <button class="lb-btn lb-close" id="fmClose" aria-label="Zatvorite film"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <div class="film-frame" id="fmFrame"></div>
+  </div>
+
+  <script>
+    const header = document.getElementById('site-header');
+    const mobileBar = document.getElementById('mobileBar');
+    const contact = document.getElementById('kontakt');
+    const calm = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const strip = document.getElementById('filmStrip');
+    const films = document.getElementById('filmovi');
+    let ticking = false;
+    function onScroll(){
+      header.classList.toggle('scrolled', window.scrollY > 12);
+      const r = contact.getBoundingClientRect();
+      const inContact = r.top < window.innerHeight && r.bottom > 0;
+      mobileBar.classList.toggle('show', window.scrollY > 600 && !inContact);
+      // Filmska traka ide dalje dok se stranica skroluje
+      if (!calm) {
+        if (window.scrollY < window.innerHeight * 1.5) strip.style.setProperty('--s', (window.scrollY * 0.4).toFixed(1));
+        const f = films.getBoundingClientRect();
+        if (f.top < window.innerHeight && f.bottom > 0) films.style.setProperty('--fs', ((window.scrollY * 0.4) % 32).toFixed(1));
+      }
+      ticking = false;
+    }
+    window.addEventListener('scroll', () => {
+      if (!ticking) { ticking = true; requestAnimationFrame(onScroll); }
+    }, {passive:true});
+    onScroll();
+
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    function setMenu(open){
+      mobileMenu.classList.toggle('open', open);
+      hamburger.classList.toggle('active', open);
+      hamburger.setAttribute('aria-expanded', open);
+      hamburger.setAttribute('aria-label', open ? 'Zatvorite meni' : 'Otvorite meni');
+      document.body.style.overflow = open ? 'hidden' : '';
+    }
+    hamburger.addEventListener('click', () => setMenu(!mobileMenu.classList.contains('open')));
+    mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setMenu(false)));
+
+    document.querySelectorAll('[data-focus]').forEach(el => {
+      el.addEventListener('click', () => {
+        setTimeout(() => document.getElementById(el.dataset.focus).focus(), 600);
+      });
+    });
+
+    // DEMO: posle kupovine ovde ide slanje upita na mejl firme
+    function posaljiUpit(podaci){ return Promise.resolve(); }
+    const form = document.getElementById('contactForm');
+    const formOk = form.querySelector('.form-ok');
+    form.querySelectorAll('[required]').forEach(polje => polje.addEventListener('input', () => {
+      const box = polje.closest('.field');
+      box.classList.remove('bad');
+      box.querySelector('.err').hidden = true;
+      polje.removeAttribute('aria-invalid');
+    }));
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      let prvo = null;
+      form.querySelectorAll('[required]').forEach(polje => {
+        const v = polje.value.trim();
+        const prazno = polje.type === 'tel' ? v.replace(/\D/g, '').length < 6 : !v;
+        const box = polje.closest('.field');
+        box.classList.toggle('bad', prazno);
+        box.querySelector('.err').hidden = !prazno;
+        polje.setAttribute('aria-invalid', prazno);
+        if (prazno && !prvo) prvo = polje;
+      });
+      if (prvo) { formOk.hidden = true; prvo.focus(); return; }
+      posaljiUpit(new FormData(form)).then(() => {
+        form.reset();
+        formOk.hidden = false;
+      });
+    });
+
+    // Lightbox za portfolio
+    const items = Array.from(document.querySelectorAll('#gallery .g-item img'));
+    const lb = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lbImg');
+    const lbClose = document.getElementById('lbClose');
+    let current = 0, lastFocus = null;
+    function show(i){
+      current = (i + items.length) % items.length;
+      lbImg.src = items[current].src;
+      lbImg.alt = items[current].alt;
+      lbImg.hidden = false;
+    }
+    items.forEach((img, i) => img.parentElement.addEventListener('click', () => {
+      lastFocus = img.parentElement;
+      show(i);
+      lb.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      lbClose.focus();
+    }));
+    function closeLb(){
+      lb.classList.remove('open');
+      document.body.style.overflow = '';
+      if (lastFocus) lastFocus.focus({preventScroll:true});
+    }
+    lbClose.addEventListener('click', closeLb);
+    document.getElementById('lbPrev').addEventListener('click', () => show(current - 1));
+    document.getElementById('lbNext').addEventListener('click', () => show(current + 1));
+    lb.addEventListener('click', e => { if (e.target === lb) closeLb(); });
+
+    // Filmovi se puštaju na stranici
+    const fm = document.getElementById('filmModal');
+    const fmFrame = document.getElementById('fmFrame');
+    const fmClose = document.getElementById('fmClose');
+    document.querySelectorAll('[data-yt]').forEach(btn => btn.addEventListener('click', () => {
+      lastFocus = btn;
+      const f = document.createElement('iframe');
+      f.src = 'https://www.youtube-nocookie.com/embed/' + btn.dataset.yt + '?autoplay=1&rel=0&playsinline=1';
+      f.title = btn.dataset.title;
+      f.allow = 'autoplay; fullscreen; encrypted-media; picture-in-picture';
+      f.allowFullscreen = true;
+      f.referrerPolicy = 'strict-origin-when-cross-origin';
+      fmFrame.replaceChildren(f);
+      fm.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      fmClose.focus();
+    }));
+    function closeFm(){
+      fm.classList.remove('open');
+      fmFrame.replaceChildren();
+      document.body.style.overflow = '';
+      if (lastFocus) lastFocus.focus({preventScroll:true});
+    }
+    fmClose.addEventListener('click', closeFm);
+    fm.addEventListener('click', e => { if (e.target === fm) closeFm(); });
+
+    document.addEventListener('keydown', e => {
+      // Tab ostaje unutar otvorenog prozora
+      const dlg = [lb, fm].find(d => d.classList.contains('open'));
+      if (dlg && e.key === 'Tab') {
+        const fok = Array.from(dlg.querySelectorAll('button, iframe'));
+        const i = fok.indexOf(document.activeElement);
+        const sledeci = e.shiftKey ? (i <= 0 ? fok.length - 1 : i - 1) : (i === fok.length - 1 ? 0 : i + 1);
+        e.preventDefault();
+        fok[sledeci].focus();
+      }
+      if (e.key === 'Escape') {
+        if (fm.classList.contains('open')) closeFm();
+        if (lb.classList.contains('open')) closeLb();
+        if (mobileMenu.classList.contains('open')) { setMenu(false); hamburger.focus(); }
+      }
+      if (lb.classList.contains('open')) {
+        if (e.key === 'ArrowLeft') show(current - 1);
+        if (e.key === 'ArrowRight') show(current + 1);
+      }
+    });
+
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    } else {
+      document.querySelectorAll('.reveal').forEach(el => el.classList.add('in-view'));
+    }
+  </script>
+
+</body>
+</html>
